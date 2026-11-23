@@ -1,0 +1,61 @@
+// Blok usluga: isti HTML se koristi na pocetnoj i na stranici Services
+.hero-services {
+  background-image:
+    linear-gradient(to bottom, rgba(34, 10, 8, 0.4), rgba(34, 10, 8, 0)),
+    url("../images/hero-services.png");
+
+  h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: rem(8);
+    background-color: $white;
+  }
+}
+
+.service-row {
+  &:nth-child(even) .service-text {
+    background-color: $pink;
+  }
+}
+
+.service-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: rem(200);
+  padding: rem(32);
+  background-color: $light-gray;
+
+  @include respond($breakpoint-lg) {
+    min-height: rem(280);
+    padding: rem(48) rem(56);
+  }
+}
+
+.service-title {
+  margin-bottom: rem(24);
+  font-family: $font-text;
+  font-weight: 400;
+  font-size: rem(24);
+  line-height: rem(32);
+  text-transform: uppercase;
+
+  @include respond($breakpoint-lg) {
+    font-size: rem(36);
+    line-height: rem(46);
+  }
+}
+
+.service-image {
+  min-height: rem(220);
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

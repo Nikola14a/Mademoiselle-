@@ -1,0 +1,54 @@
+header {
+  background-color: $white;
+  padding: rem(16) 0;
+
+  .navbar-brand {
+    padding: 0;
+    font-family: $font-heading;
+    font-size: rem(22);
+    color: $pink-dark;
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: none;
+    box-shadow: none !important;
+
+    span {
+      display: block;
+      width: rem(30);
+      height: 3px;
+      margin-bottom: 5px;
+      background-color: $black;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      @include respond($breakpoint-lg) {
+        margin-left: rem(40);
+      }
+
+      .nav-link {
+        padding: rem(10) 0;
+        font-size: rem(12);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $black;
+
+        &:hover,
+        &.active {
+          color: $pink-dark;
+        }
+
+        @include respond($breakpoint-lg) {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

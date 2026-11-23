@@ -1,32 +1,177 @@
 <!doctype html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-<html>
+<html lang="en">
   <head>
-    <title>Website title</title>
+    <title>Male and female haircut | Mademoiselle</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta name="author" content="Nikola Pavicevic" />
-    <meta name="description" content="Web page Mademoisellle" />
-    <meta name="keywords" content="" />
+    <meta
+      name="description"
+      content="Male and female haircut at Mademoiselle beauty salon." />
+    <meta name="keywords" content="beauty, salon, makeup, haircut, waxing" />
 
     <!--ios compatibility-->
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Website title" />
+    <meta name="apple-mobile-web-app-title" content="Mademoiselle" />
     <link rel="apple-touch-icon" href="apple-icon-144x144.png" />
 
     <!--Android compatibility-->
     <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="application-name" content="WebSite title" />
+    <meta name="application-name" content="Mademoiselle" />
     <link rel="icon" type="image/png" href="android-icon-192x192.png" />
 
     <!-- CSS Files -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link href="css/theme.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <header>
+      <!-- navbar start -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">Mademoiselle</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-menu"
+            aria-controls="main-menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ms-auto pt-3 pt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+    </header>
+
+    <main>
+      <!-- single service start -->
+      <section class="section single-service">
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col-md-5">
+              <img
+                class="single-service-image"
+                src="images/services03.png"
+                alt="Male and female haircut" />
+            </div>
+            <div class="col-md-7 single-service-text">
+              <h1 class="single-service-title">Male and female haircut</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </p>
+              <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum. Sed ut
+                perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- single service end -->
+
+      <!-- trends start -->
+      <section class="section trends">
+        <div class="container">
+          <h2 class="section-title">Stay up with the latest beauty trends</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <article class="trend-card">
+                <a href="./single-blog.html" class="trend-card-image">
+                  <img src="images/trend01.png" alt="Trend01" />
+                </a>
+                <div class="trend-card-body">
+                  <p class="trend-card-meta">Skin care | 12 January 2026</p>
+                  <h3 class="trend-card-title">
+                    <a href="./single-blog.html">
+                      Spring makeup trends to try this season
+                    </a>
+                  </h3>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="trend-card">
+                <a href="./single-blog.html" class="trend-card-image">
+                  <img src="images/trend02.png" alt="Trend02" />
+                </a>
+                <div class="trend-card-body">
+                  <p class="trend-card-meta">Hair | 5 January 2026</p>
+                  <h3 class="trend-card-title">
+                    <a href="./single-blog.html">
+                      How to keep your hair healthy in winter
+                    </a>
+                  </h3>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="trend-card">
+                <a href="./single-blog.html" class="trend-card-image">
+                  <img src="images/trend03.png" alt="Trend03" />
+                </a>
+                <div class="trend-card-body">
+                  <p class="trend-card-meta">Skin care | 28 December 2025</p>
+                  <h3 class="trend-card-title">
+                    <a href="./single-blog.html">
+                      Seven skincare habits worth keeping
+                    </a>
+                  </h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- trends end -->
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="social">
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+        <p class="copyright">&copy; 2026 Mademoiselle. All rights reserved.</p>
+      </div>
+    </footer>
+
     <script src="js/jquery.js" type="text/javascript"></script>
     <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>

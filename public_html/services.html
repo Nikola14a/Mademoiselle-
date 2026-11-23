@@ -1,32 +1,142 @@
 <!doctype html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-<html>
+<html lang="en">
   <head>
-    <title>Website title</title>
+    <title>Services | Mademoiselle</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta name="author" content="Nikola Pavicevic" />
-    <meta name="description" content="Web page Mademoisellle" />
-    <meta name="keywords" content="" />
+    <meta
+      name="description"
+      content="Services offered by Mademoiselle beauty salon: lip augmentation, makeup, haircut and waxing." />
+    <meta name="keywords" content="beauty, salon, makeup, haircut, waxing" />
 
     <!--ios compatibility-->
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Website title" />
+    <meta name="apple-mobile-web-app-title" content="Mademoiselle" />
     <link rel="apple-touch-icon" href="apple-icon-144x144.png" />
 
     <!--Android compatibility-->
     <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="application-name" content="WebSite title" />
+    <meta name="application-name" content="Mademoiselle" />
     <link rel="icon" type="image/png" href="android-icon-192x192.png" />
 
     <!-- CSS Files -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link href="css/theme.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <header>
+      <!-- navbar start -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">Mademoiselle</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-menu"
+            aria-controls="main-menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ms-auto pt-3 pt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+    </header>
+    <main>
+      <!-- hero start -->
+      <section
+        class="hero hero-services d-flex align-items-center justify-content-center">
+        <div class="container">
+          <h1 class="text-center">Services</h1>
+        </div>
+      </section>
+      <!-- hero end -->
+      <!-- services start -->
+      <section class="section services">
+        <div class="container">
+          <div class="service-list">
+            <div class="row g-0 service-row">
+              <div class="col-md-6 service-text">
+                <h3 class="service-title">
+                  Lip augmentation lip filling with hyaluronum
+                </h3>
+                <a href="./single-service.html" class="btn-learn">Learn more</a>
+              </div>
+              <div class="col-md-6 service-image">
+                <img src="images/services01.png" alt="Services01" />
+              </div>
+            </div>
+            <div class="row g-0 service-row flex-md-row-reverse">
+              <div class="col-md-6 service-text">
+                <h3 class="service-title">Day and night makeup</h3>
+                <a href="./single-service.html" class="btn-learn">Learn more</a>
+              </div>
+              <div class="col-md-6 service-image">
+                <img src="images/services02.png" alt="Services2" />
+              </div>
+            </div>
+            <div class="row g-0 service-row">
+              <div class="col-md-6 service-text">
+                <h3 class="service-title">Male and female haircut</h3>
+                <a href="./single-service.html" class="btn-learn">Learn more</a>
+              </div>
+              <div class="col-md-6 service-image">
+                <img src="images/services03.png" alt="Services3" />
+              </div>
+            </div>
+            <div class="row g-0 service-row flex-md-row-reverse">
+              <div class="col-md-6 service-text">
+                <h3 class="service-title">Waxing with cold and warm wax</h3>
+                <a href="./single-service.html" class="btn-learn">Learn more</a>
+              </div>
+              <div class="col-md-6 service-image">
+                <img src="images/services04.png" alt="Services4" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- services end -->
+    </main>
+    <footer>
+      <div class="container">
+        <div class="social">
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+        <p class="copyright">&copy; 2026 Mademoiselle. All rights reserved.</p>
+      </div>
+    </footer>
     <script src="js/jquery.js" type="text/javascript"></script>
     <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>

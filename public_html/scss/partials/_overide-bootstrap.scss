@@ -1,5 +1,20 @@
-html{
-    font-size: 10px;
+html {
+  font-size: 10px;
 }
 
+// Tipografija
 $font-size-base: 1.6rem;
+$font-family-base: $font-text;
+$headings-font-family: $font-heading;
+$headings-font-weight: 500;
+$h1-font-size: 6rem;
+
+// Layout
+$grid-gutter-width: 2.4rem;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: $container-width,
+  xxl: $container-width,
+);

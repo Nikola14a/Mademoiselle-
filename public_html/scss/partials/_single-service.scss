@@ -1,0 +1,31 @@
+.single-service {
+  &-image {
+    display: block;
+    width: 100%;
+    margin-bottom: rem(24);
+
+    @include respond($breakpoint-md) {
+      margin-bottom: 0;
+    }
+  }
+
+  &-title {
+    margin-bottom: rem(24);
+    font-family: $font-text;
+    font-weight: 400;
+    font-size: rem(28);
+    line-height: rem(36);
+    text-transform: uppercase;
+
+    @include respond($breakpoint-lg) {
+      font-size: rem(36);
+      line-height: rem(46);
+    }
+  }
+
+  &-text p {
+    font-size: rem(13);
+    line-height: rem(20);
+    color: $gray-text;
+  }
+}

@@ -1,0 +1,108 @@
+.hero-home {
+  background-image:
+    linear-gradient(to bottom, rgba(34, 10, 8, 0.4), rgba(34, 10, 8, 0)),
+    url("../images/hero-home.png");
+}
+
+// TRENDS (kartice bloga): beli box se preklapa preko donjeg dela slike
+.trend-card {
+  margin-bottom: $gutter;
+
+  &-image {
+    display: block;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      height: rem(220);
+      object-fit: cover;
+    }
+  }
+
+  &-body {
+    position: relative;
+    margin: rem(-40) rem(16) 0;
+    padding: rem(16);
+    background-color: $white;
+    text-align: center;
+  }
+
+  &-meta {
+    margin-bottom: rem(4);
+    font-size: rem(11);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $gray-text;
+  }
+
+  &-title {
+    margin: 0;
+    font-family: $font-text;
+    font-weight: 400;
+    font-size: rem(13);
+    line-height: rem(20);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    a {
+      color: $black;
+      text-decoration: none;
+
+      &:hover {
+        color: $pink-dark;
+      }
+    }
+  }
+}
+
+// PROFESSIONALS
+.professional {
+  padding: rem(24);
+  border: 1px solid $pink;
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: rem(200);
+  }
+
+  &-body {
+    padding-top: rem(16);
+
+    @include respond($breakpoint-md) {
+      padding: 0 0 0 rem(24);
+    }
+
+    p {
+      color: $gray-text;
+    }
+  }
+
+  &-name {
+    margin-bottom: rem(8);
+    font-family: $font-text;
+    font-weight: 700;
+    font-size: rem(18);
+    text-transform: uppercase;
+  }
+
+  &-dots {
+    display: flex;
+    gap: rem(8);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      width: rem(8);
+      height: rem(8);
+      border-radius: 50%;
+      background-color: $pink;
+
+      &.active {
+        background-color: $pink-dark;
+      }
+    }
+  }
+}

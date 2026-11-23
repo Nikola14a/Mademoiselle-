@@ -1,0 +1,22 @@
+footer {
+  padding: rem(32) 0;
+  text-align: center;
+
+  .social-icon {
+    margin: 0 rem(10);
+    font-size: rem(16);
+    color: $pink;
+    text-decoration: none;
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: $pink-dark;
+    }
+  }
+
+  .copyright {
+    margin: rem(16) 0 0;
+    font-size: rem(12);
+    color: $gray-text;
+  }
+}

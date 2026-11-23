@@ -1,3 +1,67 @@
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
+}
+
+body {
+  color: $black;
+}
+
+h1,
+.h1 {
+  font-size: rem(36);
+  line-height: rem(44);
+
+  @include respond($breakpoint-lg) {
+    font-size: rem(60);
+    line-height: rem(68);
+  }
+}
+
+.section {
+  @include section-padding(rem(60));
+
+  @include respond($breakpoint-lg) {
+    @include section-padding(rem(80));
+  }
+}
+
+.section-title {
+  margin-bottom: rem(32);
+  font-family: $font-heading;
+  font-weight: 500;
+  font-size: rem(22);
+  line-height: rem(32);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  @include respond($breakpoint-lg) {
+    font-size: rem(30);
+    line-height: rem(46);
+  }
+}
+
+// Zajednicki hero (slika se menja modifikatorom: .hero-home, .hero-services...)
+.hero {
+  min-height: rem(240);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include respond($breakpoint-lg) {
+    min-height: rem(440);
+  }
+
+  h1 {
+    color: $white;
+  }
+}
+
+// Mala roze linija ispod naslova sekcije (kao u Figmi)
+.section-title::after {
+  content: "";
+  display: block;
+  width: rem(60);
+  height: 2px;
+  margin-top: rem(12);
+  background-color: $pink;
 }

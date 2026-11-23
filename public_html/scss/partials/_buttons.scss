@@ -1,0 +1,23 @@
+// Nevidljiva klasa: ne ispisuje se u CSS-u sama, samo kroz @extend
+%btn-base {
+  display: inline-block;
+  padding: rem(8) rem(24);
+  border: 1px solid $black;
+  background-color: transparent;
+  color: $black;
+  font-family: $font-text;
+  font-size: rem(12);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.3s linear;
+}
+
+.btn-learn {
+  @extend %btn-base;
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
+}
