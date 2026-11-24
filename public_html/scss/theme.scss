@@ -1,13 +1,10 @@
-// 1. Promenljive i alati (moraju prvi)
 @import "partials/_variables.scss";
 @import "partials/_functions.scss";
 @import "partials/_mixins.scss";
 
-// 2. Bootstrap
 @import "partials/_overide-bootstrap.scss";
 @import "../bootstrap/scss/bootstrap.scss";
 
-// 3. Tvoji stilovi
 @import "partials/_fonts.scss";
 @import "partials/_animations.scss";
 @import "partials/_base.scss";

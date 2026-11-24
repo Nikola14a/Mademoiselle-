@@ -1,33 +1,160 @@
 <!doctype html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-<html>
+<html lang="en">
   <head>
-    <title>Website title</title>
+    <title>Contact | Mademoiselle</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta name="author" content="Nikola Pavicevic" />
-    <meta name="description" content="Web page Mademoisellle" />
-    <meta name="keywords" content="" />
+    <meta
+      name="description"
+      content="Contact Mademoiselle beauty salon using the form below." />
+    <meta name="keywords" content="beauty, salon, makeup, haircut, waxing" />
 
     <!--ios compatibility-->
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Website title" />
+    <meta name="apple-mobile-web-app-title" content="Mademoiselle" />
     <link rel="apple-touch-icon" href="apple-icon-144x144.png" />
 
     <!--Android compatibility-->
     <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="application-name" content="WebSite title" />
+    <meta name="application-name" content="Mademoiselle" />
     <link rel="icon" type="image/png" href="android-icon-192x192.png" />
 
     <!-- CSS Files -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link href="css/theme.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <header>
+      <!-- navbar start -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">Mademoiselle</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-menu"
+            aria-controls="main-menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ms-auto pt-3 pt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+    </header>
+
+    <main>
+      <!-- contact start -->
+      <section class="section contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="section-title">
+                Please contact us using the form below
+              </h1>
+              <form class="contact-form" action="#" method="post">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="name"
+                    placeholder="Name*" />
+                  <div class="error-msg"></div>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    placeholder="Email*" />
+                  <div class="error-msg"></div>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    name="phone"
+                    placeholder="Phone" />
+                  <div class="error-msg"></div>
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="4"
+                    placeholder="Message*"></textarea>
+                  <div class="error-msg"></div>
+                </div>
+                <button type="submit" class="btn-learn">Send message</button>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <iframe
+                class="contact-map"
+                title="Mademoiselle location"
+                src="https://www.google.com/maps?q=Belgrade&amp;output=embed"
+                loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact end -->
+
+      <!-- contact info start -->
+      <section class="contact-info">
+        <div class="container">
+          <p>Knez Mihailova 12, Belgrade</p>
+          <p>+381 11 123 4567</p>
+          <p>office@mademoiselle.rs</p>
+        </div>
+      </section>
+      <!-- contact info end -->
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="social">
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+        <p class="copyright">&copy; 2026 Mademoiselle. All rights reserved.</p>
+      </div>
+    </footer>
+
     <script src="js/jquery.js" type="text/javascript"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+      type="text/javascript"></script>
     <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
   </body>

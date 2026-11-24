@@ -1,0 +1,90 @@
+.single-blog {
+  &-meta {
+    margin-bottom: rem(12);
+    font-size: rem(12);
+    color: $gray-text;
+  }
+
+  &-category {
+    font-weight: 700;
+    color: $black;
+  }
+
+  &-title {
+    margin-bottom: rem(16);
+    font-family: $font-text;
+    font-weight: 400;
+    font-size: rem(28);
+    line-height: rem(36);
+    text-transform: uppercase;
+
+    @include respond($breakpoint-lg) {
+      font-size: rem(36);
+      line-height: rem(46);
+    }
+  }
+
+  &-intro {
+    font-size: rem(13);
+    line-height: rem(20);
+    color: $gray-text;
+  }
+
+  &-cover {
+    display: block;
+    width: 100%;
+    margin-top: rem(24);
+
+    @include respond($breakpoint-md) {
+      margin-top: 0;
+    }
+  }
+}
+
+.single-blog-content {
+  padding-bottom: rem(60);
+
+  @include respond($breakpoint-lg) {
+    padding-bottom: rem(80);
+  }
+
+  p {
+    margin-bottom: rem(24);
+    font-size: rem(13);
+    line-height: rem(22);
+    color: $gray-text;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    margin: rem(8) 0 rem(32);
+  }
+}
+
+.single-blog-tags {
+  margin-top: rem(40);
+
+  &-label {
+    margin-bottom: rem(8);
+    font-size: rem(12);
+    color: $black;
+  }
+
+  .tag {
+    display: inline-block;
+    margin: 0 rem(8) rem(8) 0;
+    padding: rem(6) rem(16);
+    background-color: $light-gray;
+    font-size: rem(11);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $black;
+    text-decoration: none;
+    transition: background-color 0.3s linear;
+
+    &:hover {
+      background-color: $pink;
+    }
+  }
+}

@@ -1,11 +1,9 @@
-// Media query od zadate sirine na vise
 @mixin respond($breakpoint) {
   @media (min-width: $breakpoint) {
     @content;
   }
 }
 
-// Gornji i donji razmak sekcije (ako se drugi izostavi, isti je kao prvi)
 @mixin section-padding($top, $bottom: $top) {
   padding: $top 0 $bottom;
 }

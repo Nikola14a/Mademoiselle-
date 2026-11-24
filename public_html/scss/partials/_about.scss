@@ -1,0 +1,81 @@
+.hero-about {
+  background-image:
+    linear-gradient(to bottom, rgba(34, 10, 8, 0.4), rgba(34, 10, 8, 0)),
+    url("../images/about/about-hero.png");
+}
+
+.about {
+  &-title {
+    margin-bottom: rem(16);
+    font-family: $font-text;
+    font-weight: 400;
+    font-size: rem(28);
+    line-height: rem(36);
+    text-transform: uppercase;
+
+    @include respond($breakpoint-lg) {
+      font-size: rem(36);
+      line-height: rem(46);
+    }
+  }
+
+  &-content {
+    margin-bottom: rem(40);
+
+    p {
+      margin-bottom: rem(24);
+      font-size: rem(13);
+      line-height: rem(22);
+      color: $gray-text;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      margin: rem(8) 0 rem(32);
+    }
+  }
+}
+
+.search-form {
+  position: relative;
+  margin-bottom: rem(32);
+
+  .form-control {
+    padding: rem(8) rem(40) rem(8) rem(12);
+    border: 1px solid $black;
+    border-radius: 0;
+    font-size: rem(13);
+    box-shadow: none;
+  }
+
+  .search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 rem(12);
+    border: 0;
+    background-color: transparent;
+    color: $gray-text;
+    cursor: pointer;
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: $pink-dark;
+    }
+  }
+}
+
+.about-sidebar {
+  .trend-card {
+    margin-bottom: rem(40);
+  }
+
+  .trend-card-meta {
+    font-family: $font-heading;
+    font-style: italic;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+}

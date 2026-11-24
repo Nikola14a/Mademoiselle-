@@ -40,7 +40,6 @@ h1,
   }
 }
 
-// Zajednicki hero (slika se menja modifikatorom: .hero-home, .hero-services...)
 .hero {
   min-height: rem(240);
   background-size: cover;
@@ -56,7 +55,6 @@ h1,
   }
 }
 
-// Mala roze linija ispod naslova sekcije (kao u Figmi)
 .section-title::after {
   content: "";
   display: block;

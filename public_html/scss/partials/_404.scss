@@ -1,0 +1,29 @@
+.hero-404 {
+  background-image:
+    linear-gradient(to bottom, rgba(34, 10, 8, 0.4), rgba(34, 10, 8, 0.2)),
+    url("../images/hero-home.png");
+
+  h1 {
+    font-family: $font-heading;
+    font-weight: 400;
+    font-size: rem(32);
+    line-height: rem(40);
+
+    @include respond($breakpoint-lg) {
+      font-size: rem(40);
+      line-height: rem(48);
+    }
+  }
+}
+
+.btn-back {
+  @extend %btn-base;
+  margin-top: rem(24);
+  border-color: $white;
+  color: $white;
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+}
